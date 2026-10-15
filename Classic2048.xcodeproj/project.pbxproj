@@ -63,7 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A5679E4AEC5B0CAB5E513A9 /* Classic2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classic2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5679E4AEC5B0CAB5E513A9 /* 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D125E9D201BDF1B596FE2A8 /* GameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F49271D17B33FD12FF0B729 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3FA92DCAC32FFF8B74330A0B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		6D28A653A058DA495568CD44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A5679E4AEC5B0CAB5E513A9 /* Classic2048.app */,
+				0A5679E4AEC5B0CAB5E513A9 /* 2048.app */,
 				0D125E9D201BDF1B596FE2A8 /* GameCore.framework */,
 				401A59CA8A549CEEBAABC524 /* GameCoreTests.xctest */,
 			);
@@ -200,7 +200,7 @@
 			packageProductDependencies = (
 			);
 			productName = Classic2048;
-			productReference = 0A5679E4AEC5B0CAB5E513A9 /* Classic2048.app */;
+			productReference = 0A5679E4AEC5B0CAB5E513A9 /* 2048.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7E5880CC5C62BAF94ED55434 /* GameCore */ = {
@@ -327,7 +327,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.coretests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.coretests;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -348,7 +348,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.core;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.core;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -426,7 +426,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.mac;
 				PRODUCT_NAME = 2048;
 				SDKROOT = macosx;
 			};
@@ -443,7 +443,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.coretests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.coretests;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -459,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.mac;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.mac;
 				PRODUCT_NAME = 2048;
 				SDKROOT = macosx;
 			};
@@ -548,7 +548,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = local.classic2048.core;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.3kn.classic2048.core;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
