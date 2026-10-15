@@ -9,8 +9,17 @@ struct Classic2048App: App {
     var body: some Scene {
         Window("2048", id: "game") {
             GameView(model: model)
+                .toolbar {
+                    ToolbarItem(placement: .automatic) {
+                        Button { model.restart() } label: {
+                            Label("New Game", systemImage: "arrow.counterclockwise")
+                        }
+                        .help("New Game (⌘N)")
+                    }
+                }
         }
-        .windowStyle(.hiddenTitleBar)
+        .windowStyle(.titleBar)
+        .windowToolbarStyle(.unified(showsTitle: false))
         .windowResizability(.contentSize)
         .defaultPosition(.center)
         .commands {
@@ -151,7 +160,7 @@ struct GameView: View {
                     .accessibilityLabel("Score \(model.game.score)")
             }
             .padding(.horizontal, 20)
-            .padding(.top, 24)
+            .padding(.top, 12)
             .padding(.bottom, 14)
 
             HStack {
@@ -160,9 +169,6 @@ struct GameView: View {
                     .foregroundStyle(Palette.ink.opacity(0.8))
                     .accessibilityLabel("Use arrow keys, W A S D, or swipe to move")
                 Spacer()
-                Button("New Game") { model.restart() }
-                    .buttonStyle(CalculatorButtonStyle())
-                    .help("New Game (⌘N)")
             }
             .padding(.horizontal, 12)
             .padding(.bottom, 10)

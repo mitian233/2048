@@ -15,6 +15,7 @@
 		61F78AF96499DE8968498328 /* MoveFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88553CBCB9B2118A337C926A /* MoveFeedback.swift */; };
 		6FF69859201243FB463C00A7 /* Classic2048App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00A22576F1413F1ACBD0D19 /* Classic2048App.swift */; };
 		9AF49793C0AC1AFBB5CB62D2 /* GameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D125E9D201BDF1B596FE2A8 /* GameCore.framework */; };
+		B7C9B3329E4994D531AF989B /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 3FA92DCAC32FFF8B74330A0B /* AppIcon.icon */; };
 		CCA84D1D537A8280CBA0E4C2 /* AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE06C2D61D4F001CB37BCE2B /* AnimationTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		0A5679E4AEC5B0CAB5E513A9 /* Classic2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classic2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D125E9D201BDF1B596FE2A8 /* GameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F49271D17B33FD12FF0B729 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3FA92DCAC32FFF8B74330A0B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		401A59CA8A549CEEBAABC524 /* GameCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88553CBCB9B2118A337C926A /* MoveFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFeedback.swift; sourceTree = "<group>"; };
 		9AC5B1755157966818814593 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		3A757E6468341CC5BAD23559 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3FA92DCAC32FFF8B74330A0B /* AppIcon.icon */,
 				DC907B6462545442E0A28169 /* Classic2048 */,
 				DC2F6614918CECD6E747E689 /* GameCore */,
 			);
@@ -181,6 +184,7 @@
 			buildConfigurationList = 97B07DB99597FEB7728FED5D /* Build configuration list for PBXNativeTarget "Classic2048" */;
 			buildPhases = (
 				4A5FC188EE73A57D10B09DC8 /* Sources */,
+				CBC1EE052BED3104E1F3CF97 /* Resources */,
 				A48093EFDCEBF73C65FFD394 /* Frameworks */,
 				24399E51FD1C23A99A5D4E69 /* Embed Frameworks */,
 			);
@@ -253,6 +257,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC1EE052BED3104E1F3CF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C9B3329E4994D531AF989B /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04B475833BAFE3CE40AA3C1E /* Sources */ = {

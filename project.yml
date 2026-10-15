@@ -17,11 +17,15 @@ targets:
     platform: macOS
     sources:
       - Sources/Classic2048
+      - path: Sources/AppIcon.icon
+        type: file
+        buildPhase: resources
     dependencies:
       - target: GameCore
     settings:
       base:
         PRODUCT_NAME: "2048"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         PRODUCT_BUNDLE_IDENTIFIER: local.classic2048.mac
         INFOPLIST_FILE: Info.plist
         ENABLE_HARDENED_RUNTIME: YES
