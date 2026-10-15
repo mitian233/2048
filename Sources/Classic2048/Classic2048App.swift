@@ -23,6 +23,7 @@ struct Classic2048App: App {
         .windowResizability(.contentSize)
         .defaultPosition(.center)
         .commands {
+            AboutCommands()
             CommandGroup(replacing: .newItem) {
                 Button("New Game") { model.restart() }
                     .keyboardShortcut("n", modifiers: .command)
@@ -34,6 +35,12 @@ struct Classic2048App: App {
                 Button("Move Down") { model.move(.down) }.keyboardShortcut(.downArrow, modifiers: [])
             }
         }
+
+        Window("About 2048", id: "about") {
+            AboutView()
+        }
+        .windowResizability(.contentSize)
+        .defaultPosition(.center)
     }
 }
 
