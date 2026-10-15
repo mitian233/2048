@@ -1,0 +1,10 @@
+# Build products and Swift Package caches
+build/
+.build/
+.swiftpm/
+DerivedData/
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+.DS_Store
